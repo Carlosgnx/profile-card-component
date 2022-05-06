@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
+  <main class="bg">
+    <img src="./images/bg-pattern-top.svg" alt="background image 1" class="bg__pattern-top-img bg__pattern-img">
+    <img src="./images/bg-pattern-bottom.svg" alt="background image 2" class="bg__pattern-bot-img bg__pattern-img">
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <article class="card">
+      <seccion class="card__header">
+        <img src="./images/bg-pattern-card.svg" alt="card background" class="card__header-img">
+        <img src="./images/image-victor.jpg" alt="card profile image" class="card__profile_img">
+        <div class="card__user-info">
+          <span class="card__user-name">Victor Crest</span>
+          <span class="card__user-age">26</span>
+        </div>
+        <p class="card__user-country">London</p>
+      </seccion>
+      <seccion class="stats">
+        <ul class="stats__list">
+          <li class="stats__list-item">
+            <p class="stats__list-numbers">80K</p>
+            <p class="stats__list-names">Followers</p>
+          </li>
+          <li class="stats__list-item">
+            <p class="stats__list-numbers">803K</p>
+            <p class="stats__list-names">Likes</p>
+          </li>
+          <li class="stats__list-item">
+            <p class="stats__list-numbers">1.4K</p>
+            <p class="stats__list-names">Photos</p>
+          </li>
+        </ul>
+      </seccion>
+    </article>
+  </main>
 </body>
+
 </html>
